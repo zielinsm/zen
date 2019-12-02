@@ -1,0 +1,86 @@
+.menuIcon {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menuIcon > div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-white);
+  margin: 4px 0;
+}
+
+.container {
+  color: var(--color-white);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.desktopContainer {
+  display: none;
+  grid-area: 1 / 1 / 2 / 2;
+  padding-top: 2.65rem;
+}
+
+.mobileContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  z-index: 1;
+  background-color: var(--color-gray);
+  transition: 0.5s;
+}
+
+.menuVisible {
+  width: 100%;
+}
+
+.inner {
+  padding: 1.5rem;
+}
+
+.heading {
+  width: fit-content;
+  user-select: none;
+  margin: 0;
+  padding: 0.75rem;
+  font-size: 2rem;
+  background-color: var(--color-white);
+  color: var(--color-gray);
+}
+
+.labelContainer {
+  padding-top: 2rem;
+}
+
+.label {
+  display: block;
+  width: fit-content;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  user-select: none;
+  cursor: pointer;
+}
+
+.labelActive {
+  text-decoration: line-through;
+}
+
+@media (min-width: 52rem) {
+  .desktopContainer {
+    display: block;
+  }
+
+  .menuIcon {
+    display: none;
+  }
+
+  .menuVisible {
+    width: 0;
+  }
+}
