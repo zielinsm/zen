@@ -14,6 +14,19 @@ ul {
   margin: 0.1rem 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: inherit;
+}
+
+hr {
+  width: 100%;
+}
+
 html,
 body,
 #root,
